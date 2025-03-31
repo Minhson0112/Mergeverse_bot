@@ -29,9 +29,7 @@ class PlayCommand(commands.Cog):
         try:
             await user.send(f"🎮 Ấn để bắt đầu chơi: {game_url}")
             await interaction.response.send_message(
-                f"📩 {user.mention} tôi đã gửi link chơi game cho bạn qua tin nhắn riêng!",
-                ephemeral=True
-            )
+                f"📩 {user.mention} tôi đã gửi link chơi game cho bạn qua tin nhắn riêng!")
         except:
             await interaction.response.send_message(
                 "❌ Tôi không thể gửi tin nhắn riêng cho bạn. Vui lòng kiểm tra cài đặt quyền riêng tư.",

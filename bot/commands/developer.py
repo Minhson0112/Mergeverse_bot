@@ -23,12 +23,12 @@ class DeveloperInfo(commands.Cog):
         )
         embed.add_field(
             name="📩 Liên hệ Facebook",
-            value="[mountain1237536](https://www.facebook.com/son.kakashi01/)",
+            value="[Developer](https://www.facebook.com/son.kakashi01/)",
             inline=False
         )
         embed.set_footer(text="Cảm ơn bạn đã sử dụng bot!")
 
-        await interaction.response.send_message(embed=embed, ephemeral=True)
+        await interaction.response.send_message(embed=embed)
 
 async def setup(bot):
     await bot.add_cog(DeveloperInfo(bot))

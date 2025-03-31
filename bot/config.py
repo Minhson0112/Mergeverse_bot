@@ -4,7 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-BACKEND_HOST = "https://mergeverse.onrender.com"
+BACKEND_HOST = "http://10.6.78.48:8000/"
+ADMIN_OVERRIDE_ID = 995730123166851102
 
 DB_CONFIG = {
     'host': os.getenv('DB_HOST'),

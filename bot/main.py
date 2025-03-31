@@ -26,6 +26,10 @@ async def main():
     await bot.load_extension("bot.commands.localSun")
     await bot.load_extension("bot.commands.sync")
     await bot.load_extension("bot.commands.developer")
+    await bot.load_extension("bot.commands.seasonReset")
+    await bot.load_extension("bot.commands.localRankSeason")
+    await bot.load_extension("bot.commands.globalRankSeason")
+    await bot.load_extension("bot.commands.help")
     await bot.start(DISCORD_TOKEN)
 
 if __name__ == "__main__":
